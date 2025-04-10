@@ -1,16 +1,13 @@
 package com.myproject;
-
 public class MyLinkedList<T> implements MyList<T> {
     private class MyNode {
         T element;
         MyNode next;
         MyNode prev;
-
         MyNode(T element) {
             this.element = element;
         }
     }
-
     private MyNode head;
     private MyNode tail;
     private int size;
@@ -20,7 +17,6 @@ public class MyLinkedList<T> implements MyList<T> {
         tail = null;
         size = 0;
     }
-
     @Override
     public void add(T element) {
         MyNode newNode = new MyNode(element);

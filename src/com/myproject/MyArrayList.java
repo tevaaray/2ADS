@@ -21,7 +21,6 @@ public class MyArrayList<T> implements MyList<T> {
         }
         return (T) elements[index];
     }
-
     @Override
     public int size() {
         return size;

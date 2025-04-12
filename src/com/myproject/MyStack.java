@@ -1,4 +1,6 @@
 package com.myproject;
+
+
 public class MyStack<T> {
     private MyArrayList<T> list = new MyArrayList<>();
     public void push(T element) {

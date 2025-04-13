@@ -14,6 +14,14 @@ public class MyStack<T> {
         list.remove(list.size() - 1);
         return element;
     }
+
+    public T peek() {
+        if (list.isEmpty()) {
+            throw new IllegalStateException("Stack is empty");
+        }
+        return list.get(list.size() - 1);
+    }
+
     public boolean isEmpty() {
         return list.isEmpty();
     }
